@@ -6,7 +6,6 @@ import { cn } from "@/utils/cn";
 
 export default function SignUp() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
     console.log("Form submitted");
   };
   return (

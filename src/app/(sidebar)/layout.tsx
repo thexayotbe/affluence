@@ -25,8 +25,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Sidebar />
-          {children}
+          <div className="flex bg-black-6">
+            {" "}
+            <Sidebar />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
