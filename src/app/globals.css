@@ -21,3 +21,6 @@
 .button {
   @apply bg-green-1 rounded-lg text-white hover:bg-white hover:text-green-1 border-2 hover:border-green-1 transition-all;
 }
+.center {
+  @apply top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%];
+}

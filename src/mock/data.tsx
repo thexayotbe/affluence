@@ -400,3 +400,76 @@ export const data = [
     ammount: "$2.98",
   },
 ];
+
+export const balances = [
+  {
+    id: 1,
+    title: "Checking",
+    type: "Silver Bank",
+    card_number: "2016 8556 3870 133",
+    amount: "$39112.01",
+  },
+  {
+    id: 2,
+    title: "Cash",
+    type: "Gold Bank",
+    card_number: "5574 8550 1129 2960",
+    amount: "$23020.77",
+  },
+  {
+    id: 3,
+    title: "Cash",
+    type: "Gold Bank",
+    card_number: "3529 9323 5821 4328",
+    amount: "$27439.42",
+  },
+  {
+    id: 4,
+    title: "Checking",
+    type: "Platinum Bank",
+    card_number: "3529 3873 8325 6341",
+    amount: "$43597.60",
+  },
+  {
+    id: 5,
+    title: "Investment",
+    type: "Platinum Bank",
+    card_number: "3573 5141 6731 6802",
+    amount: "$39378.67",
+  },
+  {
+    id: 6,
+    title: "Checking",
+    type: "Silver Bank",
+    card_number: "3555 0164 4675 5083",
+    amount: "$11660.82",
+  },
+  {
+    id: 7,
+    title: "Savings",
+    type: "Silver Bank",
+    card_number: "5641 8259 5905 5211938",
+    amount: "$40238.81",
+  },
+  {
+    id: 8,
+    title: "Checking",
+    type: "Gold Bank",
+    card_number: "3587 8259 8574 5376",
+    amount: "$49021.79",
+  },
+  {
+    id: 9,
+    title: "Investment",
+    type: "Visa",
+    card_number: "3036 4392 5515 98",
+    amount: "$24311.92",
+  },
+  {
+    id: 10,
+    title: "Loan",
+    type: "Diamond Bank",
+    card_number: "3582 5200 8422 2105",
+    amount: "$38352.73",
+  },
+];
