@@ -16,7 +16,7 @@
   @apply bg-white rounded-xl shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] px-10 py-5;
 }
 .title {
-  @apply text-3xl text-black-4 font-sans font-light;
+  @apply text-3xl text-black-4 font-sans font-light mb-5;
 }
 .button {
   @apply bg-green-1 rounded-lg text-white hover:bg-white hover:text-green-1 border-2 hover:border-green-1 transition-all;

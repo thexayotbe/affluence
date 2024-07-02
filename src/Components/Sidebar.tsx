@@ -3,7 +3,7 @@ import React from "react";
 import { sidebarData } from "../constants";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/Avatar";
 import { usePathname, useRouter } from "next/navigation";
-
+import Link from "next/link";
 const Sidebar = () => {
   const pathName = usePathname();
   return (
@@ -13,7 +13,8 @@ const Sidebar = () => {
       </div>
       <ul className="mt-10 ">
         {sidebarData.map((item) => (
-          <li
+          <Link
+            href={item.link}
             key={item.id}
             className={`flex gap-5 w-[200px] h-[48px] items-center p-5 cursor-pointer hover:gap-10 transition-all mb-5  rounded-md ${
               pathName === item.link && "bg-green-1"
@@ -21,7 +22,7 @@ const Sidebar = () => {
           >
             <img src={item.icon} alt="" width={24} height={24} />
             <h3 className="text-white font-sans"> {item.title}</h3>
-          </li>
+          </Link>
         ))}
       </ul>
 

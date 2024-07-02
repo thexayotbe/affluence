@@ -473,3 +473,106 @@ export const balances = [
     amount: "$38352.73",
   },
 ];
+
+export const savings = [
+  {
+    id: 1,
+    amount: "$3265.45",
+    title: "Home  Fund",
+  },
+  {
+    id: 2,
+    amount: "$8992.69",
+    title: "Investment Fund",
+  },
+  {
+    id: 3,
+    amount: "$5835.09",
+    title: "Retirement Fund",
+  },
+  {
+    id: 4,
+    amount: "$9999.28",
+    title: "Home Renovation Fund",
+  },
+  {
+    id: 5,
+    amount: "$6751.37",
+    title: "Investment Fund",
+  },
+  {
+    id: 6,
+    amount: "$4432.30",
+    title: "Car Repair Fund",
+  },
+  {
+    id: 7,
+    amount: "$9417.45",
+    title: "Retirement Fund",
+  },
+  {
+    id: 8,
+    amount: "$3874.41",
+    title: "Holiday Fund",
+  },
+  {
+    id: 9,
+    amount: "$5766.42",
+    title: "College Fund",
+  },
+  {
+    id: 10,
+    amount: "$9058.55",
+    title: "Investment Fund",
+  },
+  {
+    id: 11,
+    amount: "$2132.49",
+    title: "Healthcare Fund",
+  },
+  {
+    id: 12,
+    amount: "$6456.16",
+    title: "Retirement Fund",
+  },
+  {
+    id: 13,
+    amount: "$9937.11",
+    title: "Holiday Fund",
+  },
+  {
+    id: 14,
+    amount: "$8148.67",
+    title: "College Fund",
+  },
+  {
+    id: 15,
+    amount: "$1919.75",
+    title: "Retirement Fund",
+  },
+  {
+    id: 16,
+    amount: "$9402.12",
+    title: "Healthcare Fund",
+  },
+  {
+    id: 17,
+    amount: "$2547.10",
+    title: "College Fund",
+  },
+  {
+    id: 18,
+    amount: "$1433.74",
+    title: "Retirement Fund",
+  },
+  {
+    id: 19,
+    amount: "$4072.33",
+    title: "Retirement Fund",
+  },
+  {
+    id: 20,
+    amount: "$2252.01",
+    title: "Car Repair Fund",
+  },
+];

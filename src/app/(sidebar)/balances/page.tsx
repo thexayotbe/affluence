@@ -9,7 +9,7 @@ const Balances = () => {
           return (
             <div
               key={item.id}
-              className="flex flex-col  items-center py-5 box w-[415px] h-[300px] justify-between mt-10 gap-5"
+              className="flex flex-col  items-center py-5 box w-[415px] h-[300px] justify-between mt-20 gap-5"
             >
               <div className="flex justify-between w-full items-center h-[54px] border-2-black-4 border-b">
                 <span className="text-black-4 font-semibold text-lg">
