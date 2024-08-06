@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Table from "@/Components/ui/Table";
 import TransactionModal from "@/Components/ui/TransactionModal";
+
 const page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const cancel = () => {
@@ -11,6 +12,7 @@ const page = () => {
     setIsOpen(false);
     // Add transaction logic here
   };
+
   return (
     <div className="px-[40px] py-40 w-full relative">
       <TransactionModal open={isOpen} cancel={cancel} onOk={onOk} />
@@ -18,7 +20,7 @@ const page = () => {
         <h1 className="title">Recent Transactions</h1>
         <button className="button w-40 h-12" onClick={() => setIsOpen(true)}>
           Add Transaction
-        </button>
+        </button>{" "}
       </div>
       <Table />
     </div>

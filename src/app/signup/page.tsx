@@ -3,7 +3,7 @@ import React from "react";
 import { Label } from "../../Components/ui/label";
 import { Input } from "../../Components/ui/input";
 import { cn } from "@/utils/cn";
-
+import Link from "next/link";
 export default function SignUp() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     console.log("Form submitted");
@@ -18,8 +18,8 @@ export default function SignUp() {
           Create an account
         </p>
 
-        <form className="my-8" onSubmit={handleSubmit}>
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+        <form className="my-4 flex flex-col gap-8" onSubmit={handleSubmit}>
+          <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-2 ">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>
               <Input id="firstname" placeholder="Tyler" type="text" />
@@ -29,15 +29,15 @@ export default function SignUp() {
               <Input id="lastname" placeholder="Durden" type="text" />
             </LabelInputContainer>
           </div>
-          <LabelInputContainer className="mb-4 mt-10">
+          <LabelInputContainer className=" ">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
           </LabelInputContainer>
-          <LabelInputContainer className="mb-4 mt-10">
+          <LabelInputContainer className="">
             <Label htmlFor="password">Password</Label>
             <Input id="password" placeholder="••••••••" type="password" />
           </LabelInputContainer>
-          <LabelInputContainer className="mb-8 mt-10">
+          <LabelInputContainer className=" ">
             <Label htmlFor="passwordConfirm"> Confirm Password </Label>
             <Input id="password" placeholder="••••••••" type="password" />
           </LabelInputContainer>
@@ -53,7 +53,10 @@ export default function SignUp() {
         </form>
         <p className="text-center text-black-5/90 font-sans">
           Already have account?{" "}
-          <span className="text-green-1 cursor-pointer">Sign in Here</span>
+          <Link href="/login">
+            {" "}
+            <span className="text-green-1 cursor-pointer">Sign in Here</span>
+          </Link>
         </p>
       </div>
     </div>

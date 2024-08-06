@@ -1,12 +1,28 @@
+"use client";
+import GoalMOdal from "@/Components/ui/GoalsModal";
 import PieChart from "@/Components/ui/Piechart";
 import { savings } from "@/mock/data";
 import { Progress } from "antd";
-import React from "react";
+import React, { useState } from "react";
 
 const Goals = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const cancel = () => {
+    setIsOpen(false);
+  };
+  const onOk = () => {
+    setIsOpen(false);
+    // Add transaction logic here
+  };
   return (
     <div className="px-[40px] py-40 w-full relative">
-      <h1 className="title">Goals</h1>
+      <GoalMOdal open={isOpen} cancel={cancel} onOk={onOk} />
+      <div className="flex justify-between">
+        <h1 className="title">Goals</h1>
+        <button className="button w-40 h-12" onClick={() => setIsOpen(true)}>
+          Add Goal
+        </button>{" "}
+      </div>{" "}
       <div className="flex gap-10">
         <div className="box w-[420px] h-[292px] flex flex-col justify-between">
           <h1 className="w-full h-[40px] text-black-4 font-semibold text-lg border-b border-2-black-2">

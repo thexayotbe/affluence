@@ -1,11 +1,17 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { sidebarData } from "../constants";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/Avatar";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
+import { isAuth } from "@/utils/cookieAuth";
+
 const Sidebar = () => {
+  const router = useRouter();
   const pathName = usePathname();
+  useEffect(() => {
+    if (!isAuth()) router.push("/login");
+  }, []);
   return (
     <div className="w-[290px] h-[100vh] bg-black-1 flex flex-col  items-center py-20 sticky top-0 ">
       <div>

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/Components/ThemeProvider";
 import Sidebar from "@/Components/Sidebar";
+import { Toaster } from "@/Components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
+  showSidebar?: boolean;
 }>) {
   return (
     <html lang="en">
@@ -25,7 +27,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex bg-black-6"> {children}</div> <Toaster />
         </ThemeProvider>
       </body>
     </html>

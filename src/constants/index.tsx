@@ -1,10 +1,10 @@
 export const sidebarData = [
-  // {
-  //   id: 0,
-  //   title: "Overview",
-  //   icon: "/Overview.svg",
-  //   link: "/overview",
-  // },
+  {
+    id: 0,
+    title: "Overview",
+    icon: "/Overview.svg",
+    link: "/",
+  },
   {
     id: 1,
     title: "Balances",
@@ -17,12 +17,12 @@ export const sidebarData = [
     icon: "./transaction.svg",
     link: "/transactions",
   },
-  // {
-  //   id: 3,
-  //   title: "Bills",
-  //   icon: "./bills.svg",
-  //   link: "/bills",
-  // },
+  {
+    id: 3,
+    title: "Loan",
+    icon: "./bills.svg",
+    link: "/loan",
+  },
   // {
   //   id: 4,
   //   title: "Expenses",

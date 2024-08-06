@@ -1,10 +1,12 @@
 import Sidebar from "@/Components/Sidebar";
-
-export default function Home() {
+const Home = () => {
   return (
-    <div>
-      {/* <Login /> */}
-      {/* <SignUp /> */}
+    <div className="flex bg-black-6">
+      {" "}
+      <Sidebar />
+      <div></div>
     </div>
   );
-}
+};
+
+export default Home;
